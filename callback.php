@@ -40,7 +40,7 @@ function processCode()
     $accessTokenValue = $accessToken->getAccessToken();
     $_SESSION['access_key'] =  $accessTokenValue ;
 
-    header("Location:" . "http://localhost/quick/useToken.php");
+    header("Location:" . "http://localhost:8000/createAccount.php");
 }
 
 function parseAuthRedirectUrl($url)

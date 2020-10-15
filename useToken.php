@@ -18,4 +18,4 @@ $dataService = DataService::Configure(array(
     'baseUrl' => "Development"
 ));
 
-print_r(json_encode($dataService));
+

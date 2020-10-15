@@ -48,7 +48,9 @@ $updatedtoken = $dataService->updateOAuth2Token($accessToken);
 
 
 
-$data = array("Name"=> "MyJobs_test_only", "AccountType"=> "Accounts Receivable","AcctNum"=>"1234567" );
-$acc = Account::create($data,true);
+$data = array("Name"=> "Loves", "AccountType"=> "Accounts Receivable","AcctNum"=>"1120123" );
+$acc = Account::create($data);
 
-print_r($acc) ;
+ $newAcc=  $dataService->Add($acc);
+
+print_r($newAcc) ;

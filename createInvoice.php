@@ -5,23 +5,27 @@ use QuickBooksOnline\API\Facades\Invoice;
 include_once "includes.php";
 
 $invoiceToCreate = Invoice::create([
-    "DocNumber" => "103",
+    "DocNumber" => "104",
     "Line" => [
         [
-            "Description" => "online hosting for Alex",
+            "Description" => "vegitables for Salome",
             "Amount" => 450.00,
             "DetailType" => "SalesItemLineDetail",
             "SalesItemLineDetail" => [
                 "ItemRef" => [
                     "value" => 2,
                     "name" => "Services"
-                ]
+                ],
+                // "TaxCodeRef"=>[
+                //     "value"=>2
+                // ]
             ]
         ]
     ],
+    
     "CustomerRef" => [
-        "value" => "1",
-        "name" => "Alex"
+        "value" => "2",
+        "name" => "salome"
     ]
 ]);
 
